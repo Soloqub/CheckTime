@@ -25,13 +25,10 @@ class ViewController: UIViewController {
     }
     
     func checkTime(){
-        //let today = NSDate()
         let dateFormatter = NSDateFormatter()
         let dateFormatterString = NSDateFormatter.dateFormatFromTemplate("HH:mm:ss", options: 0, locale: NSLocale.systemLocale())
         dateFormatter.dateFormat = dateFormatterString
         time.text = dateFormatter.stringFromDate(NSDate())
-        //newTimer.t
-        //println(dateFormatter.stringFromDate(today))
     }
 }
 
